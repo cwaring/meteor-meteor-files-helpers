@@ -1,6 +1,6 @@
 Package.describe({
   name: 'sanjo:meteor-files-helpers',
-  version: '1.1.0_5',
+  version: '1.1.0_6',
   summary: 'Helpers for interacting with Meteor files in the filesystem',
   git: 'https://github.com/Sanjo/meteor-meteor-files-helpers.git',
   documentation: 'README.md'
