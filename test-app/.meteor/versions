@@ -43,7 +43,7 @@ routepolicy@1.0.5
 sanjo:jasmine@0.13.0-rc.4
 sanjo:karma@1.5.1
 sanjo:long-running-child-process@1.0.3
-sanjo:meteor-files-helpers@1.1.0_3
+sanjo:meteor-files-helpers@1.1.0_5
 sanjo:meteor-version@1.0.0
 sanjo:node-module-test@1.0.0
 session@1.1.0
