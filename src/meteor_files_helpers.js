@@ -14,10 +14,18 @@ MeteorFilesHelpers = {
   },
 
   getMeteorToolPath: function () {
-    if (isWindows()) {
-      return path.resolve(process.env.NODE_PATH, '../../..')
-    } else {
-      return process.env.OLDPWD
+    return this._findMeteorToolDir(process.execPath);
+  },
+
+  _findMeteorToolDir: function (filepath) {
+    return findUpwards(this._isMeteorToolDir.bind(this), filepath);
+  },
+
+  _isMeteorToolDir: function (filepath) {
+    try { // use try/catch to avoid the additional syscall to fs.existsSync
+      return fs.statSync(path.join(filepath, 'meteor')).isFile();
+    } catch (e) {
+      return false;
     }
   },
 

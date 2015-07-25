@@ -14,7 +14,7 @@ var fs = Npm.require('fs');
 // returns either the path to the lowest level directory that passed
 // the test or null for none found. if starting path isn't given, use
 // cwd.
-var findUpwards = function (predicate, startPath) {
+findUpwards = function (predicate, startPath) {
   var testDir = startPath || process.cwd();
   while (testDir) {
     if (predicate(testDir)) {
