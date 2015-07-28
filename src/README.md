@@ -3,7 +3,7 @@
 Helpers for interacting with Meteor files in the filesystem of the current application.
 Useful for package authors that need to access Meteor files in the filesystem.
 
-This package has been tested on Mac OS X and Windows 8.1 with Meteor 1.1.
+This package has been tested on Mac OS X, Windows 8.1 and Ubuntu 14.04 with Meteor 1.1.
 
 ## Methods
 
